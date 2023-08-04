@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nina Carducci",
+    "jobTitle": "Photographe",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "68 avenue Alsace-Lorraine",
+      "addressLocality": "Bordeaux",
+      "addressRegion": "Nouvelle-Aquitaine",
+      "postalCode": "33200",
+      "addressCountry": "France"
+    },
+    "image": "./assets/images/content/nina.webp",
+    "telephone": "+33556677889",
+    "description": "Photographe professionnelle basée à Bordeaux, spécialisée en photographie de paysage, de portrait, et d'événement. Disponible du lundi au vendredi de 10h à 19h.",
+    "url": "ninacarducci.github.io",
+    "sameAs": [
+      "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+
+    ]
+  }

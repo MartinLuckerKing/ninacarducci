@@ -2,19 +2,17 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="description" content="Découvrez mon portfolio en tant que photographe professionnelle à Bordeaux. 
-	Je capture des moments uniques à travers des clichés captivants. 
-	Contactez-moi dès maintenant pour réserver une séance photo ou obtenir des informations supplémentaires. 
-	Mon adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux. Mon numéro de téléphone : 05 56 67 78 89.">
-	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	Je capture des moments uniques à travers des clichés captivants.">
+	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/maugallery.js"></script>
+	<script defer src="./assets/maugallery.min.js"></script>
 	<script defer src="./assets/scripts.js"></script>
 	<title>Nina Carducci photographe</title>
 	<meta property="og:title" content="ninacarducci.photo" />
@@ -22,21 +20,23 @@
     <meta property="og:image" content="https://www.instagram.com/p/CeF4U4vICWw/?hl=fr" />
     <meta property="og:url" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
     <meta property="og:type" content="photographie" />
+	<script type="application/ld+json" src="./richsnippetperson.json"></script>
+
 </head>
 <body>
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Lien instagram"></a></li>
+			<li><a aria-label="Accéder à ma présentation" href="#about">À propos</a></li>
+			<li><a aria-label="Accéder à ma gallerie d'image" href="#gallery">Galerie</a></li>
+			<li><a aria-label="Accéder au différent service que je propose" href="#services">Service</a></li>
+			<li><a aria-label="Accéder au formulaire de contact" href="#contact">Contact</a></li>
+			<li><a aria-label="Accéder à mon instagram" class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Lien instagram"></a></li>
 		</ul>
-	</div>
+	</nav>
 </div>
-<div id="header">
+<section id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,22 +63,22 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
-<div id="about">
+</section>
+<section id="about">
 	<div class="picture left">
 		<img src="./assets/images/content/nina.webp" alt='photo de profil de la photographe'>
 	</div>
-	<div id="about-me" itemscope ">
+	<div id="about-me" itemscope>
 		<h3 class="about-me__title">A propos de moi</h3>
 		<h4 class="about-me__introduction">Nous passons notre vie à chercher le bonheur, et lorsque nous l'effleurons, nous n'avons qu'une seule envie : l'immortaliser à travers des photographies pour le savourer avec les personnes qui sont chères à notre cœur, 
 			ou pour le partager avec le plus grand nombre. 
-			C'est ce que je vous offre, ici, à <span itemprop="City" itemscope itemtype="City">Bordeaux</span>. 
+			C'est ce que je vous offre, ici, à <span class="about-me__introduction" itemprop="City" itemscope itemtype="https://schema.org/City">Bordeaux</span>. 
 			Je capture ces moments précieux à travers mon regard, ma sensibilité, ma technique. 
 			En tant que photographe, je rends ces instants immortels, afin que vous puissiez y puiser de l'amour, 
 			du bonheur, de la tendresse et de la lumière chaque fois que vous poserez les yeux sur vos photos.
 	</div>
-</div>
-<div id="gallery">
+</section>
+<section id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -101,8 +101,8 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
@@ -136,16 +136,16 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
+</section>
+<aside class="quote">
 	<figure>
 		<blockquote>
 			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
-<div id="contact">
+</aside>
+<section id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
@@ -157,13 +157,13 @@
 				<input type="email" name="email" id="email">
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+				<input aria-label="Envoyer le formulaire" type="submit" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
 			<img src="./assets/images/content/camera.webp" alt="appareil photo">
 		</div>
 	</div>
-</div>
+</section>
 </body>
 </html>
