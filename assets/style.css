@@ -50,7 +50,6 @@ body {
 	position: relative;
 }
 
-
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -63,38 +62,17 @@ body {
 }
 
 .picture {
-    margin: 0 20px;
-    z-index: 0;
-    max-width: 100%;
-    height: auto;
+	flex: 1;
+	margin: 0 20px;
+	z-index: 0;
+	max-width: 100%;
+	height: auto;
 }
 
 .picture img {
-	width: 550px;
 	max-width: 100%;
-	height: 548px;
-	max-height: 100%;
-	object-fit: cover;
+	height: auto;
 
-}
-
-.picture__banner {
-	width: 1920px;
-	height: 888px;
-	max-width: 100%;
-	height: 100%;
-}
-
-.picture__form {
-	width: 420px;
-	max-width: 100%;
-	height: 85%;
-	object-fit: cover;
-}
-
-.picture__logo__insta {
-	width: 20px;
-	height: 20px;
 }
 #about-me {
 	flex: 2
@@ -108,17 +86,15 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	font-size: 16px;
-	max-width: 500px;
+	width: 60%;
+	
 	
 }
 
-.about-me__text {
-	font-weight: 400;
-	font-size: 14px;
-	max-width: 800px;
+#about-me p {
+	width: 80%;
+	font-size: 24px;
 }
-
 
 #gallery {
 	/*	min-height: 100vh; */
@@ -180,6 +156,7 @@ body {
 	font-weight: 300;
 	font-size: 40px;
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -300,14 +277,10 @@ input[type="submit"] {
 		flex-direction: column;
 
 	}
-
-	.picture.left {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.picture {
+		max-width: 50%;
+		height: auto;
 	}
-	
-
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -357,11 +330,6 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
-
-	form {
-		width: 100%;
-		align-items: center;
-	}
 }
 
 @media all and (max-width: 650px) {
@@ -393,14 +361,8 @@ input[type="submit"] {
 	}
 	form {
 		width: 100%;
-		align-items: center;
 	}
 	.picture {
 		width: 80%;
 	}
-
-	.picture img {
-		height: 300px;
-	}
 }
-
